@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --lg-font: 'Merriweather', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --gray: rgb(153, 153, 153);
+}
+
+* {
+    font-family: var(--sm-font);
+}
+
+/* BTN */
+.bg-primary {
+    background-color: var(--gray) !important;
+}
+
+/* NAVBAR */
+.navbar-brand span {
+    letter-spacing: 1px;
+    font-family: var(--lg-font);
+}
+
+.nav-link:hover {
+    color: ar(--gray) !important;
+}
+
+/* BANNER */
+.banner-image {
+    background-image: url(banner-img.jpg);
+    background-size: cover;
+}
+.tagline {
+    margin-right: 20%;
+}
+/* TITLE */
+.title h2::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--gray);
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.row .btn {
+    border-color: var(--gray) !important;
+}
+.row .btn:hover{
+    border-color: rgb(17,17,17) !important;
+}
+/* BS BOOK COLLECTION */
+.active-filter-btn {
+    background-color: var(--gray) !important;
+    color: #fff !important;
+    border-color: var(--gray) !important;
+}
+/* FOOTER */
+footer {
+    background-color: rgb(221,221,221);
+}
+
+.social-icons {
+    top: 20px;
+}
+
+.social-icons :hover {
+    color: rgb(42, 129, 136);
+}
+
+.legals :hover {
+    color: rgb(42, 129, 136);
+}
+
+.solid-line {
+    width: 50%;
+    left: 25%;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 502px) {
+    .order-lg-2 {
+        display: none;
+    }
+}
